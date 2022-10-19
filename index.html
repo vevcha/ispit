@@ -12,6 +12,12 @@
       section {
         width: 50%;
       }
+      body {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
     </style>
   </head>
   <body>
@@ -85,12 +91,13 @@
         </p>
         <form action="push">
           <label for="iip">Ime i prezime</label><br />
-          <input type="text" id="iip" /><br /><br />
+          <input type="text" id="iip" required="required" /><br /><br />
           <label for="email">E-mail</label><br />
           <input
             type="email"
             id="email"
             placeholder="ivo.ivic@gmail.com"
+            required="required"
           /><br /><br />
           <label for="poruka">Poruka</label><br />
           <textarea
@@ -98,6 +105,7 @@
             id="poruka"
             cols="60"
             rows="15"
+            required="required"
             placeholder="Napiši poruku..."
           ></textarea
           ><br />
